@@ -8,9 +8,10 @@
 
 #include "testCfile.h"
 
+__attribute__((noinline))
 char * foo()
 {
-    static char stringlist[94];
+    static char stringlist[96];
     
     int f = 32;
     int l = 126;

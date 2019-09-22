@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -23,7 +24,7 @@ void fooAsm(void);
     
     char * abc = foo();
     NSString* myString = [NSString stringWithUTF8String:abc];
-    
+    self.label.text = myString;
     
 }
 
